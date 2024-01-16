@@ -18,10 +18,19 @@ st.write("Masukkan atribut untuk melakukan prediksi")
 with st.form(key='my_form'):
     # Input user
     age = st.slider("Usia", min_value=18, max_value=100, value=30)
+    st.write(f"Usia yang dipilih: {age}")
+
     sex = st.radio("Jenis Kelamin", options=["Pria", "Wanita"])
+    st.write(f"Jenis Kelamin yang dipilih: {sex}")
+
     bmi = st.slider("BMI", min_value=10, max_value=50, value=25)
+    st.write(f"BMI yang dipilih: {bmi}")
+
     children = st.slider("Jumlah Anak", min_value=0, max_value=5, value=2)
+    st.write(f"Jumlah Anak yang dipilih: {children}")
+
     smoker = st.radio("Perokok atau tidak", options=["Tidak", "Ya"])
+    st.write(f"Perokok atau tidak yang dipilih: {smoker}")
 
     # Tombol prediksi
     submit_button = st.form_submit_button(label='Submit')
