@@ -12,7 +12,10 @@ def predict_charges(attributes):
 
 # Tampilan Streamlit
 st.title("Aplikasi Prediksi Asuransi")
-st.write("Masukkan atribut untuk melakukan prediksi")
+st.title("UAS (Malam) : Data Warehouse dan Data Mining")
+st.write("NIM : 2020230006")
+st.write("Nama : Rifqi Iqbal Pratama")
+st.write("Pilih Nilai sesuai untuk melakukan prediksi")
 
 # Formulir HTML
 with st.form(key='my_form'):
