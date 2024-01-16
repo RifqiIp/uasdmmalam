@@ -50,4 +50,8 @@ if submit_button:
     # Prediksi
     prediction = predict_charges(attributes)
     
-    st.write(f"Perkiraan biaya asuransi: ${prediction:.2f}")
+    # Konversi ke IDR (Rupiah)
+    exchange_rate = 14200  # You can use the current exchange rate
+    prediction_idr = prediction * exchange_rate
+    
+    st.write(f"Perkiraan biaya asuransi: ${prediction:,.2f} atau sekitar Rp {prediction_idr:,.2f} IDR")
